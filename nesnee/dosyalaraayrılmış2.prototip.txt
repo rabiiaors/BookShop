@@ -1,0 +1,209 @@
+                                    MAİN
+#include<iostream>
+#include<sstream>
+#include<string>
+#include "kayit.h"
+#include "indirimlikitap.h"
+using namespace std;
+
+int main() {
+	
+	
+	// ana menü
+    cout<<"bookshop kitap merkezine hos geldiniz...\n\n";
+	cout<<"yapilabilecek islemler\n 1-kayit ekleme \n2-kayitli kitaplarin listesini gosterme \n3-kayit silme\n4-kullanilabilirlik oranini gosterme\n5-ucret hesabi"<<endl;
+				
+int islem;
+	cout<<"yapmak istediginiz islem numarasi:";
+	cin>>islem;
+// kayit ekleme
+	if(islem==1){	
+
+	cout<<"---kayit ekleme---"<<endl;
+	int b;
+		cout<<" kitap kayit turleri\n 1-normal kitap\n 2-indirimli kitap\n";
+		cout<<"yapmak istediginiz kitap kayit turu numarasi:";cin>>b;
+		if(b==1){
+	int a;
+	cout<<" kayit yapmak istediginiz kitap sayisi:";
+	cin>>a;
+	cout<<"--------------------------------------"<<endl;
+	
+kayit birinci[a-1];
+string kitapadi;
+string yazar;
+int fiyat;
+
+
+for(int i=0;i<=a;i++){
+	cout<<i+1<<"   kitap bilgilerini giriniz  "<<"\n";
+	cout<<"kitapadi:";cin>>kitapadi;
+	cout<<"yazar:";cin>>yazar;
+	cout<<"fiyat:";cin>>fiyat;
+
+cout<<"\n";
+birinci[i];
+birinci[i];
+birinci[i];
+
+}
+cout<<"kayit islemi tamalandi..."<<endl;
+}
+else if(b==2){
+    	int a;
+	cout<<" kayit yapmak istediginiz kitap sayisi:";
+	cin>>a;
+	cout<<"--------------------------------------"<<endl;
+	
+indirimlikitap ikinci[a-1];
+string kitapadi;
+string yazar;
+int fiyat;
+int indirimorani;
+
+
+for(int i=0;i<=a;i++){
+	cout<<i+1<<"   kitap bilgilerini giriniz  "<<"\n";
+	cout<<"kitapadi:";cin>>kitapadi;
+	cout<<"yazar:";cin>>yazar;
+	cout<<"fiyat:";cin>>fiyat;
+	cout<<"indirim yuzdesi:";cin>>indirimorani;
+	
+
+cout<<"\n";
+ikinci[i];
+ikinci[i];
+ikinci[i];
+ikinci[i];
+
+}
+cout<<"kayit islemi tamalandi..."<<endl;
+}
+
+}
+// kayitli kitap listesini gösterme
+else if(islem==2){
+	
+			cout<<"                   kayitli kitap listesi\n";
+cout<<"1. İNSAN MÜHENDİSLİĞİ / Nüvit Osmay/ Alfa Yayınları /30tl\n 2. İŞ BAŞINDA DUYGUSAL ZEKA/ Daniel Goleman/ Varlık/30tl\n 3. KİMİNLE, NE ZAMAN, NEREDE, NASIL KONUŞMALI/ Lary King/ İnkılap/50\n4. GENÇ BİR İŞ ADAMINA/ Emre Yılmaz/ İlk Kaynak Yayınevi/30tl\n";
+    cout<<"5. HIZLI OKUMA /Mustafa Ruşen/ Alfa Yayınları/30tl\n 6. ETKİLİ İNSANLARIN 7 ALIŞKANLIĞI/ Stephen Covey/ Varlık/30tl\n 7. ZENGİN BABA YOKSUL BABA/ Robert Kiyosaki/ Kuraldışı/30tl\n 8. ATATÜRKÜN LİDERLİK SIRLARI/ Adnan Nur Baykal/ Sistem Yayınları/30tl\n 9. TÜRK USULÜ BAŞARI/ Mümin Sekman/Alfa Yayınları/30tl\n 10. YILDIZIN PARLADIĞI ANLAR/ Stefan Zweig / Can Yayınları/30tl\n 11. NEGATİF LİMANLARDAN POZİTİF SULARA/ Oğuz Saygın/ Hayat Yayınları/30tl\n 12. İÇE DÖNÜK KONUŞMANIN GÜCÜ/Shad Helmstetter/ Sistem Yayınları/30tl\n 13. YÖNETİMİN GELECEĞİ/ Melih Arat/ Mavi Ajans/30tl\n 14. TRANS VE DEĞİŞİM/ Richard Bandler- John Grinder / Alfa Yayınevi/30tl\n 15. KOT PANTOLUNLU YÖNETİCİ/ Murat Toktamışoğlu/ Mediacat yayınları/30tl\n 16. DEHANIN EL KİTABI/ Tony Buzan/ Sabah Yayınları/30tl\n 17. YA BİR YOL BUL YA BİR YOL AÇ YA DA YOLDAN ÇEKİL/ Mümin Sekman/ Alfa yayınları/30tl\n 18. DÜŞÜNCE ATLASI/ Nüvit Osmay/ Öncü Kitabevi/30tl\n 19. SHAKESPEARE'NİN YÖNETİM VE LİDERLİK SIRLARI/John Whitney/ Alfa Yayınevi/40tl\n"; 
+    cout<<"20. DÜŞÜN VE BAŞAR/ Muhammed Bozdağ/ Nesil Yayınları/40tl\n 21. İŞ YAŞAMINDA 100 KANGURU/ Şerif İzgören/ Academyplus/40tl\n 22. PROFESYONEL İŞ YAŞAMINDA KİŞİSEL İMAJ/ Özlem Çakır/ YKY/40tl\n 23. 80/20 İLKESİ/ Richard Koch/ Varlık Yayınları/40tl\n 24. BELLEK EĞİTİMİYLE ANIMSAMA YÖNTEMLERİ/ Tony Buzan/ Epsilon/40tl\n 25. FOTOĞRAFİK HAFIZA TEKNİKLERİ/ Melik Safi Duyar/ Yeni Stratejiler Yayınevi/40tl\n 26. SAHİP OLMAK YADA OLMAK/ Eric Fromm/ Arıtan Yayınevi/40tl\n 27. GİRİŞİMCİLİK TUTKUSU/ Michael Gerber/ Sistem Yayınları/40tl\n 28. İKTİDAR/Robert Greene/ Altın Kitaplar/40tl\n 29. KİŞİSEL ATALETİ YENMEK/ Mümin Sekman/ Alfa Yayınları/40tl\n 30. BİZİM DUYGUSAL ZEKAMIZ/Erdal Atabek/ Altın Kitaplar/40tl\n 31. DİKKAT VÜCUDUNUZ KONUŞUYOR/ Şerif İzgören/ AcademyPlus/40tl\n 32. LEONARDO DA VİNCİ GİBİ DÜŞÜNMEK/Michael Gelb/ Beyaz Yayınları/40tl\n 33. GENÇLERE TAVSİYELER/ Üzeyir Garih/ Hayat Yayınları/40tl\n 34. İNSAN İNSANA/ Doğan Cüceloğlu/ Remzi Kitapevi/40tl\n 35. İLETİŞİM ÇATIŞMALARI VE EMPATİ/ Üstün Dökmen/ Sistem Yayınevi/40tl\n";
+    cout<<"36. BEN DEĞERİ TİRYAKİLİĞİ/ A. Kadir Özer/ Sistem Yayınevi/40tl\n 37. DÜŞÜNMEK, ÖĞRENMEK, UNUTMAK/ Frederic Wester/ Arıtan Yayınevi/40tl\n 38. DÜŞÜN VE ZENGİN OL/ Napoleon Hill/Altın Kitaplar/40tl\n 39. BİR PIRILTIDIR YAŞAMAK/ İpek Ongun/ Remzi Kitapevi/40tl\n 40. İÇİNİZDEKİ LİDERİ GELİŞTİRMEK/ John Maxwell/75tl\n 41. BÜYÜK DÜŞÜNMENİN BÜYÜSÜ/ David Schwartz/ Sistem Yayınları/75tl\n 42. BAŞARI TAKTİKLERİ/ Edvard De Bono/ İlgi Yayınları/75tl\n 43. AZ SEÇİLEN YOL/ Scott Peck/ Akaşa Yayınları/75tl\n44. NLP/Nil Gün/ Kuraldışı/75tl\n 45. YABANCI DİL ÖĞRENME YOLLARI/ ECE VAHAPOĞLU/ ALFA YAYINLARI/75tl\n 46. TÜKETİM KÜLTÜRÜ/Yavuz Odabaşı/ Sistem Yayınevi/75tl\n47. BEŞİNCİ DİSİPLİN/Peter Senge/YKY/75tl\n 48. BAŞARININ YOLU/Yunus Bilge/ Güvender Yayınları/75tl\n 49. SINIRSIZ GÜÇ/ Anthony Robbins/ İnkılap Kitapevi/75tl\n 50. İÇİNDEKİ DEVİ UYANDIR/ Anthony Robbins/ İnkılap Kitapevi/35tl\n 51. BEDENİN DİLİ/Acar Baltaş/ Remzi Kitapevi/35tl\n 52. SÖZ SÖYLEMEK VE İŞ BAŞARMAK SANATI/ Dale Carnegie/ Kitsan/35tl\n 53. KİŞİSEL BAŞARI İÇİN 100 İPUCU/Steve Chandler/ Rota yayınları/35tl\n";
+    cout<<"54. YENİ KONUMLANDIRMA/Jack Trout/ Profilo Yayınları/35tl\n 55. BAŞARI ÜZERİNE SÖZ CEVHERLERİ/ İbrahim Refik/ Albatros/35tl\n 56. %100 DÜŞÜNCE GÜCÜ/Jack Addington/ Akaşa Yayınları/35tl\n 57. ÜSTÜN BAŞARI/Acar Baltaş/ Remzi Kitapevi/35tl\n 58. BEYİN GELİŞTİRME/ Marilyn Savant / İm yayınevi/35tl\n 59. YARATICI DÜŞÜNME/Nuray Sungur/ Evrim Kitapevi/35tl\n 60. KAZANMANIN YENİ DİNAMİĞİ/ Denis Waitley/ İnkılap Kitapevi/35tl\n 61. GENÇ BİLİM ADAMİNA ÖĞÜTLER/ P.B.Medawar/ Tübitak Yayınları/65tl\n 62. YARATICI İMGELEME/ Shakti Gawain/ Akaşa Yayınları/65tl\n 63. KÜRESELLEŞME VE YENİ EKONOMİ/Yaprak Özer/ Hayat Yayınları/65tl\n 64. NE HİSSETTİĞİNİZ KENDİNİZE BAĞLI/ Mckay Dınkmeyer/ HYB/65tl\n 65. DUYGUSAL VAMPİRLER/ Albert Bernstein/ Alfa Yayınevi/65tl\n 66. BİR LİDER OLABİLMEK/Warren Bennis/ Sistem Yayınevi/65tl\n 67. KESİN İNANÇLILAR/ Eric Hoffer/ İm Yayınevi/65tl\n 68. TÜRKİYEDE SİBERNETİK VE NLP UYGULAMALARI/ Tamer Dövücü/ Beyaz Yayınları/65tl\n 69. HAYAT YOLUNDA/ Taha Akyol/ Doğan Kitap/ 65tl\n 70. BAŞARMAK HEM KOLAY HEM ZORDUR/ Selçuk Yaşar/ Özel baskı/ 50tl\n 71. DEĞİŞİM KUŞAĞINDAKİLER/ Nejat Sezik/ Hayat Yayınları/ 50tl\n 72. OLUMLU DÜŞÜNME/ Vera Peiffer/ Alfa Yayınları/ 50tl\n 73. DÜNYANIN EN BÜYÜK SIRRI/ Og Magdino/ Epsilon Yayınevi1/ 50tl\n 74. KONUŞMA EĞİTİMİ/ Suat Taşer/ İleri Kitabevi/ 50tl\n 75. KİŞİLİK BULMACASI/florence Littauer/ Sistem Yayınevi/ 50tl\n 76. KESİNTİSİZ ÖĞRENME/ Mümin Sekman/ Alfa Yayınevi/ 50tl\n 77. HİTABET SANATI/ Nejat Muallimoğlu/ Avcıol Matbaası/ 50tl\n 78. REKABETÜSTÜ/ Edward De Bono/ Remzi Kitabevi/ 50tl\n 79. EN ÜSTTEKİLER/ Kazım Kılınç/ Ekovitrin Yayınları/ 50tl\n 80. KİŞİSEL İMAJ/Müjde Ker Dinçer/ Alfa Yayınevi/ 50tl\n";
+cout<<" 81. BABİLİN EN ZENGİN ADAMI/ George Clason/Arion Yayınevi/ 50tl\n 82. İNSANLARI ETKİLEME YOLLARI/ Robert Cialdini/ İmge Yayınları/ 50tl\n 83. ŞEYTANIN FISILDADIKLARI/ Emre Yılmaz/ İlkkaynak yayınları/ 50tl\n 84. HIZLI VE KOLAY ÖĞRENME/ Reha Oğuz Türkkan/ Alfa yayınevi/ 50tl\n 85. KULAĞINIZA KÜPE OLSUN/ Bülent Şenver/ Dünya yayınevi/ 50tl\n 86. DÜNYA DÜŞÜNCE ANTOLOJİSİ/ İsmail Özmen/ Saypa / 50tl\n 87. BAŞARI İÇİN STRATEJİLER/ John Maxwell-Jım Dornan/Sistem Yayınları/ 50tl\n 88. NLP/ Hery Adler/ Sistem Yayınları/ 50tl\n 89. BAŞKASINA ÇALIŞARAK ZENGİN OLUNMAZ/ Robert Fritz/ Alkım/ 50tl\n 90. ZAMANA YÖNETİMİ/ Ray Joseph/ Epsilon Yayınev/ 50tl\n 91. SAKLI HAYATLAR/ Cemal Kalyoncu/ Zaman kitapv92. DEĞİŞİM KÜLTÜRÜ/ Faruk Türkoğlu/ Arıtan yayınları/ 50tl\n 93. DEVRİMCİLER İÇİN KURALLAR/ Guy Kawasaki/ Mediacat kitapları/ 50tl\n 94. PRENS (HÜKÜMDAR) /Niccolo Machiavelli/ Alkım Yayınları/ 50tl\n 95. ETKİLİ İNSAN OLMAK/ John Maxwell-Jim Dornan / Sistem yayınları/ 50tl\n 96. İLETİŞİMSİZLİK BECERİSİ / Kadir Özer / Sistem Yayınları/ 50tl\n 97. OKUMA ZENGİNLİĞİ/ Roz Townsend / Sistem Yayınları/ 50tl\n 98. DÜNYANIN EN İYİ SATICISI / Og Mandino / Boyner// 50tl\n 99. LİDERDEN LİDERLERE / Drucker Vakfı/ MESS yayınları / 50tl\n";
+
+}
+// çok biçimlilik ile yapılmış fonksiyonlarla ücret hesabı
+else if(islem==5){ 
+string kitapadi;
+string yazar;
+int fiyat;
+int indirimorani;
+int hesaplaa;
+	cout<<"kitapadi:";cin>>kitapadi;
+	cout<<"yazar:";cin>>yazar;
+	cout<<"fiyat:";cin>>fiyat;
+	cout<<"indirim yuzdesi:";cin>>indirimorani;
+hesaplaa=fiyat-(fiyat*indirimorani)/100;
+        cout<<"toplam odencek tutar="<<hesaplaa;
+	
+}
+
+
+
+	
+
+    return 0;}
+-----------------------------------------------------------------------------------------------------------------------
+#include<string>
+#ifndef INDIRIMLIKITAP_H
+#define INDIRIMLIKITAP_H
+#include "kayit.h"
+using namespace std;
+ class indirimlikitap : public kayit {                         İNDİRİMLİKİTAP.CPP
+     public:
+     int indirimorani;
+    void bilgilerigoster();
+    void  toplamtutarhesapla();
+ };
+
+#endif
+------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+#include<sstream>
+#include<string>
+#include "indirimlikitap.h"
+#include "kayit.h"
+using namespace std;
+
+ void indirimlikitap:: toplamtutarhesapla() {                   İNDİRİMLİKİTAP.H
+        int hesapla;
+        hesapla=fiyat-(fiyat*indirimorani)/100;
+        cout<<"toplam odencek tutar="<<hesapla; }
+
+void indirimlikitap:: bilgilerigoster(){
+    cout<<"kitapadi:"<<kitapadi<<endl<<"yazari:"<<yazar<<endl<<"fiyati:"<<fiyat<<endl<<"indirim yüzdesi:"<<indirimorani;
+}	
+----------------------------------------------------------------------------------------------------------------------
+#include<string>
+#ifndef KAYIT_H
+#define KAYIT_H
+using namespace std;
+class kayit{
+    public:                                                     KAYİT.H
+    	string kitapadi;
+    	string yazar;
+    	int fiyat;
+    	void bilgilerigoster();
+    void toplamtutarhesapla();
+    	
+};
+
+
+#endif
+----------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+#include<sstream>
+#include<string>
+#include "kayit.h"
+using namespace std;                                                  KAYİT.CPP
+
+ void kayit:: toplamtutarhesapla(){
+    cout<<"toplam odencek tutar="<<fiyat;}
+    
+    void kayit:: bilgilerigoster(){
+    cout<<"kitapadi:"<<kitapadi<<endl<<"yazari:"<<yazar<<endl<<"fiyati:"<<fiyat<<endl;}
+-----------------------------------------------------------------------------------------------------------------------
+#include<string>
+#ifndef KULLANILABILIRLIK_H
+#define KULLANILABILIRLIK_H
+using namespace std;
+class kullanilabilirlik
+{ 
+    private:
+    	int kacinciel;                                                KULLANILABİLİRLİK.H
+	public:
+		void setkacinciel(int k);
+         int getkacinciel();
+         public:
+        void yazdir();
+};
+
+
+#endif
+----------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+#include<sstream>
+#include<string>
+#include "kullanilabilirlik.h"
+using namespace std;
+void kullanilabilirlik :: setkacinciel(int k){                    KULLANILABİLİRLİK.CPP
+	kacinciel=k;
+}
+ int kullanilabilirlik:: getkacinciel(){
+	 return kacinciel;}
+	 
+	 void kullanilabilirlik ::yazdir(){
+	 	cout<<kacinciel;
+	 }
+----------------------------------------------------------------------------------------------------------------
